@@ -6,14 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://sine-weed.github.io">
-  <title>Tag: vscode | 长歌短笛</title>
+  <title>Ubuntu 配置 | 长歌短笛</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="长歌短笛">
-<meta property="og:url" content="http://sine-weed.github.io/tags/vscode/index.html">
+  <meta name="description" content="修改软件源网上随意百度一个 Ubuntu 软件源，记得要注意系统版本，用其代替 &#x2F;etc&#x2F;apt&#x2F;source.list。 更新系统12345678# 更新本地包数据库$ sudo apt update# 更新所有已安装的包（也可以使用 full-upgrade）sudo apt upgrade# 自动移除不需要的包sudo apt autoremove">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ubuntu 配置">
+<meta property="og:url" content="http://sine-weed.github.io/ubuntu-config/index.html">
 <meta property="og:site_name" content="长歌短笛">
+<meta property="og:description" content="修改软件源网上随意百度一个 Ubuntu 软件源，记得要注意系统版本，用其代替 &#x2F;etc&#x2F;apt&#x2F;source.list。 更新系统12345678# 更新本地包数据库$ sudo apt update# 更新所有已安装的包（也可以使用 full-upgrade）sudo apt upgrade# 自动移除不需要的包sudo apt autoremove">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-05-08T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-11-18T02:44:45.051Z">
 <meta property="article:author" content="长歌短笛">
+<meta property="article:tag" content="Tool">
+<meta property="article:tag" content="Ubuntu">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="长歌短笛" type="application/atom+xml">
@@ -150,64 +156,208 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-ubuntu-config" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/vs-code-plug-in/" class="archive-article-date">
-  	<time datetime="2020-08-16T09:39:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>08-16-2020</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/vs-code-plug-in/">常用 VS Code 插件</a>
+    <h1 class="article-title" itemprop="name">
+      Ubuntu 配置
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/ubuntu-config/" class="archive-article-date">
+  	<time datetime="2020-05-08T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>05-09-2020</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="修改软件源"><a href="#修改软件源" class="headerlink" title="修改软件源"></a>修改软件源</h2><p>网上随意百度一个 Ubuntu 软件源，记得要注意系统版本，用其代替 <code>/etc/apt/source.list</code>。</p>
+<h2 id="更新系统"><a href="#更新系统" class="headerlink" title="更新系统"></a>更新系统</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 更新本地包数据库</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo apt update</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 更新所有已安装的包（也可以使用 full-upgrade）</span></span><br><span class="line">sudo apt upgrade</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 自动移除不需要的包</span></span><br><span class="line">sudo apt autoremove</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h2 id="几个常用软件安装"><a href="#几个常用软件安装" class="headerlink" title="几个常用软件安装"></a>几个常用软件安装</h2><p>基本都是 <code>sudo apt install [binary_name]</code>，你可以按你的需求添加删除软件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> vim python git docker.io</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo apt install vim python git docker.io</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="小飞机"><a href="#小飞机" class="headerlink" title="小飞机"></a>小飞机</h2><p><a target="_blank" rel="noopener" href="https://github.com/qingshuisiyuan/electron-ssr-backup/blob/master/Ubuntu.md">https://github.com/qingshuisiyuan/electron-ssr-backup/blob/master/Ubuntu.md</a></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 一些依赖</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo apt install libindicator7 libcanberra-gtk-module libcanberra-gtk3-module gconf2 gconf-service libappindicator1</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo apt-get install libssl-dev libsodium-dev</span></span><br><span class="line"></span><br><span class="line"><span class="meta">$</span><span class="bash"> wget https://github.com/qingshuisiyuan/electron-ssr-backup/releases/download/v0.2.6/electron-ssr-0.2.6.deb</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo dpkg -i electron-ssr-0.2.6.deb</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 后面的我就不写了</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="屏保"><a href="#屏保" class="headerlink" title="屏保"></a>屏保</h2><p>这完全是闲得慌</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> cmatrix，数字雨</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> https://github.com/abishekvashok/cmatrix</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo apt install cmatrix</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> cmatrix</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> Steam Locomotive，火车</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> https://github.com/mtoyoda/sl</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo apt install sl</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sl</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> Screenfetch，Linux 发行版 ASCII 化的图标以及一些系统信息</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> https://github.com/KittyKatt/screenFetch</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo apt install screenfetch</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> screenfetch</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="更换-Shell"><a href="#更换-Shell" class="headerlink" title="更换 Shell"></a>更换 Shell</h2><p>我对于 Shell 要求不高，不过万一哪天想换了呢。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> Terminator</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo add-apt-repository ppa:gnome-terminator</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo apt update</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo apt install terminator</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 这以 zsh 打个样</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo apt install zsh</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo chsh -s /bin/zsh</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 网上有现成的 zsh 配置（oh-my-zsh），这里就用这个，这里记录两种方式</span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 自动安装</span></span></span><br><span class="line">wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 手动安装</span></span></span><br><span class="line">git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh</span><br><span class="line">cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装一些 zsh 插件</span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># autojump - 快速切换目录插件</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> apt install autojump</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># zsh-autosuggestions - 命令行命令键入时的历史命令建议插件</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> https://github.com/zsh-users/zsh-autosuggestions <span class="variable">$&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;</span>/plugins/zsh-autosuggestions</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># zsh-syntax-highlighting - 命令行语法高亮插件</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> https://github.com/zsh-users/zsh-syntax-highlighting.git <span class="variable">$&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;</span>/plugins/zsh-syntax-highlighting</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 在 .zshrc 中完成插件的配置</span></span></span><br><span class="line">plugins=(autojump zsh-autosuggestions zsh-syntax-highlighting)</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">vscode</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Tool</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">plug-in</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Ubuntu</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://sine-weed.github.io/ubuntu-config/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/version-control/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          版本控制规范
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/git/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Git Usage</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E8%BD%AF%E4%BB%B6%E6%BA%90"><span class="toc-number">1.</span> <span class="toc-text">修改软件源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E7%B3%BB%E7%BB%9F"><span class="toc-number">2.</span> <span class="toc-text">更新系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%A0%E4%B8%AA%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85"><span class="toc-number">3.</span> <span class="toc-text">几个常用软件安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%8F%E9%A3%9E%E6%9C%BA"><span class="toc-number">4.</span> <span class="toc-text">小飞机</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B1%8F%E4%BF%9D"><span class="toc-number">5.</span> <span class="toc-text">屏保</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%B4%E6%8D%A2-Shell"><span class="toc-number">6.</span> <span class="toc-text">更换 Shell</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -230,9 +380,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
